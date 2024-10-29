@@ -311,6 +311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MC
       objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 8af2432233d9ed34cbeb26c0285bdaa4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 8af2432233d9ed34cbeb26c0285bdaa4, type: 3}
       propertyPath: m_LocalScale.x
       value: 15

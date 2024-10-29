@@ -332,6 +332,7 @@ MonoBehaviour:
     caballero o un mago"
   - 'MC: No puedo esperar, vamos de una vez'
   playButton: {fileID: 0}
+  sceneName: Forest
 --- !u!1 &973566890
 GameObject:
   m_ObjectHideFlags: 0

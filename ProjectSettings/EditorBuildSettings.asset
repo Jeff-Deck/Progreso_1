@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -14,4 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/firstScene.unity
     guid: 3e59f554444abfd489cd8c624c39a338
+  - enabled: 1
+    path: Assets/Scenes/BattleScene.unity
+    guid: 2ef3debd1f33d27468e2453c6f959c48
+  - enabled: 1
+    path: Assets/Scenes/Castle Conversation.unity
+    guid: 33b4d226dcfc2364d90af7973f986935
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity
+    guid: 2e4d49677c6e1dc4d990bd7fa06d4dc9
+  - enabled: 1
+    path: Assets/Scenes/FirstConversation.unity
+    guid: 0627c90162ba9eb4f95e3915d9d5174d
   m_configObjects: {}

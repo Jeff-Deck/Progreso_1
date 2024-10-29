@@ -2,39 +2,45 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
-    public TextMeshProUGUI dialogueText; // Referencia al objeto de texto donde aparecerá el diálogo
-    public string[] dialogueLines; // Aquí almacenaremos las líneas del diálogo para cada escena
-    public GameObject playButton; // Botón para avanzar el diálogo
+    public TextMeshProUGUI dialogueText; // Referencia al objeto de texto donde aparecerï¿½ el diï¿½logo
+    public string[] dialogueLines; // Aquï¿½ almacenaremos las lï¿½neas del diï¿½logo para cada escena
+    public GameObject playButton; // Botï¿½n para avanzar el diï¿½logo
+    public string sceneName; 
 
-    private int currentLineIndex = 0; // Índice de la línea actual del diálogo
+    private int currentLineIndex = 0; // ï¿½ndice de la lï¿½nea actual del diï¿½logo
 
     void Start()
     {
-        // Mostrar la primera línea de diálogo al comenzar la escena
+        // Mostrar la primera lï¿½nea de diï¿½logo al comenzar la escena
         ShowNextDialogue();
     }
 
-    // Método para mostrar la siguiente línea de diálogo
+    // Mï¿½todo para mostrar la siguiente lï¿½nea de diï¿½logo
     public void ShowNextDialogue()
     {
         if (currentLineIndex < dialogueLines.Length)
         {
-            dialogueText.text = dialogueLines[currentLineIndex]; // Mostrar la línea actual
-            currentLineIndex++; // Avanzar al siguiente diálogo
+            dialogueText.text = dialogueLines[currentLineIndex]; // Mostrar la lï¿½nea actual
+            currentLineIndex++; // Avanzar al siguiente diï¿½logo
         }
         else
         {
-            EndDialogue(); // Si no hay más líneas, terminar el diálogo
+            EndDialogue(); // Si no hay mï¿½s lï¿½neas, terminar el diï¿½logo
         }
     }
 
-    // Método para finalizar el diálogo
+    // Mï¿½todo para finalizar el diï¿½logo
     private void EndDialogue()
     {
-        Debug.Log("Diálogo terminado.");
-        // Aquí puedes ocultar el cuadro de diálogo, hacer una transición, etc.
+        Debug.Log("Diï¿½logo terminado.");
+        // Aquï¿½ puedes ocultar el cuadro de diï¿½logo, hacer una transiciï¿½n, etc.
+         if (!string.IsNullOrEmpty(sceneName))
+        {
+            SceneManager.LoadScene(sceneName); // Cambia a la escena especificada
+        }
     }
 }

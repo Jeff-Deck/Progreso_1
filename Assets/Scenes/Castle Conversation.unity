@@ -771,6 +771,7 @@ MonoBehaviour:
   - "Rey: \xA1Es hora de iniciar la prueba de combate!"
   - 'MC: Como ordene su majestad.'
   playButton: {fileID: 0}
+  sceneName: BattleScene
 --- !u!1 &1093240642
 GameObject:
   m_ObjectHideFlags: 0
